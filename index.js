@@ -11,5 +11,5 @@ app.get('about', function (req, res) {
 });
 
 app.listen(3300, function () {
-  console.log('hi')
+  console.log('hi, server running at 3300.')
 });

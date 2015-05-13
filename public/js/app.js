@@ -29,9 +29,8 @@ app.factory('Homework', function ($http) {
 app.controller('MainController', function ($scope, Homework) {
   $scope.homeworks = Homework
   $scope.current = {}
-  $scope.show = function(thing){
-    $scope.current = thing
-    console.dir(thing)
+  $scope.show = function(hw){
+    $scope.current = hw
   }
 
 });
