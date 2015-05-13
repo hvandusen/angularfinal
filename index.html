@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>homeworks</title>
+        <!-- We've provided some styles for you, aren't we nice? -->
+
+    </head>
+    <body ng-app='Homeworks'>
+    <div ng-controller="MainController">
+      <ul
+        ng-repeat="homework in homeworks"
+        class="hwbox">
+      <li>
+        <a ng-click='show(homework)'>{{homework.assignment}}</a>
+          <div ng-show='homework === current'>
+            <a href="{{homework.url}}" >{{homework.url}}</a>
+            <br>
+            <a>{{homework.status}}</a>
+        </div>
+      </li>
+    </ul>
+
+    </div>
+
+  </div>
+    <script src="lib/angular.js"></script>
+    <script type='text/javascript' src="js/app.js"></script>
+
+    </body>
+</html>
